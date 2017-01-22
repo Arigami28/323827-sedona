@@ -46,63 +46,49 @@
 	    <main>
 			<!-- на этой странице тоже весь основной контент будет состоять из строк -->
 			<!--строка 1 начало , строка с фильтром отелей номер 1  первая после шапки -->
-			<section class="row1-hotels-main"> <!-- размытое изображение идет фоном для этого блока  -->
+			<section class="filter-hotels-main"> <!-- размытое изображение идет фоном для этого блока  -->
 				
 				<form action="#"><!-- 1 форма  фильтра поиска отелей -->
 
-					<fieldset class="infrastructure-row1-holes-main"> <!-- фильт инфраструктуры  -->
+					<fieldset class="infrastructure-filter-holes-main"> <!-- фильт инфраструктуры  -->
 
 						<legend>Инфраструктура:</legend>
 
-								 <ul>
-								   	<li>
+
 								   	<!-- input прячется и привязывается к label после чего декорируется label иконки 
 							    		состояния добавляются с помощью ::befor/after  -->
 								   		<input id="infrastructure-hotels" type="checkbox" name="infrastructure-hotels" checked hidden>
 								   		<label for="infrastructure-hotels">Бассейны</label>
-								   	</li>
 
-								   	<li>
 									   	<input id="parking-hotels" type="checkbox" name="parking-hotels"  hidden>
 									   	<label for="parking-hotels">Парковка</label>
-								   	</li>
 
-								   	<li>
 									   	<input id="wifi-hotels" type="checkbox" name="wifi-hotels"  hidden>
 									   	<label for="wifi-hotels">Wi-fi</label>
-								   	</li>
 
-							   </ul>
 					</fieldset>
 
 
-					<fieldset class="type-row1-holes-main"> <!-- фильтр жилья  -->
+					<fieldset class="type-filter-holes-main"> <!-- фильтр жилья  -->
 
 						<legend>Тип жилья:</legend>
 
-								 <ul>
-								   	<li>
+
 								   	<!-- input прячется и привязывается к label после чего декорируется label иконки 
 							    		состояния добавляются с помощью ::befor  -->
 								   		<input id="holet-hotels" type="checkbox" name="holet-hotels" checked hidden>
 								   		<label for="holet-hotels">Гостиница</label>
-								   	</li>
 
-								   	<li>
 									   	<input id="motel-hotels" type="checkbox" name="motel-hotels" checked hidden>
 									   	<label for="motel-hotels">Мотель</label>
-								   	</li>
 
-								   	<li>
 									   	<input id="Apartments-hotels" type="checkbox" name="Apartments-hotels" checked hidden>
 									   	<label for="Apartments-hotels">Аппартаменты</label>
-								   	</li>
 
-							   </ul>
 
 					</fieldset>
 
-					<fieldset class="price-row1-hotels-main"> <!-- фильтр стоимости  -->
+					<fieldset class="price-filter-hotels-main"> <!-- фильтр стоимости  -->
 
 						<legend>Стоимость в сутки(Р):</legend>
 						
@@ -128,7 +114,7 @@
 			<!-- строка 1 конец -->
 			
 			<!-- строка 2 начало , фильр отелей номер 2 -->
-			<section class="row2-hotels-main">
+			<section class="tegfilter-hotels-main">
 					
 					<h2>Найдено:3</h2>
 
@@ -138,56 +124,58 @@
 						</li>
 
 						<li>
-							<a href="#" class="btn-row2-hotels-main">По цене</a>
+							<a href="#" class="btn-tegfilter-hotels-main">По цене</a>
 						</li>
 
 						<li>
-							<a href="#" class="btn-row2-hotels-main">По типу</a>
+							<a href="#" class="btn-tegfilter-hotels-main">По типу</a>
 						</li>
 
 						<li>
-							<a href="#" class="btn-row2-hotels-main">По рейтингу</a>
+							<a href="#" class="btn-tegfilter-hotels-main">По рейтингу</a>
 						</li>
 					</ul>
 				
-				<!-- стрелки вверх и вниз во 2 фильтре прижатые к правому краю -->
-				<div class="arrowup-row2-hotels-main"></div>
-				<div class="arrowdown-row2-hotels-main"></div>
+				<!-- стрелки вверх и вниз во 2 фильтре прижатые к правому краю сделаны ссылкой-->
+				<a href="#">
+					<div class="arrowup-tegfilter-hotels-main"></div>
+				</a>
+
+				<a href="#">	
+					<div class="arrowdown-tegfilter-hotels-main"></div>
+				</a>
 				
 			</section>
 			<!-- строка 2 конец -->
 			
 			<!-- строка 3 начало , это уже идут отели как рез поиска  -->
-			<section class="row3-hotels-main">
+			<section class="result-filter-hotels-main">
 
-				<figure class="img-row3-hotels-main"> <!-- картинка превью отеля -->
-
+				 <!-- картинка превью отеля -->
 					<img src="http://placehold.it/135x90" alt="Hotels" width="135" height="90">
-
-				</figure>
 				
-				<div class="text-row3-hotels-main"><!-- блок с кнопками и заголовками справа от  превью отеля -->
+				<div class="text-result-filter-hotels-main"><!-- блок с кнопками и заголовками справа от  превью отеля -->
 
 					<h2>Amara resort &#38; SPA</h2>
 					
-					<div class="cost-text-row3-hotels-main">
+					<div class="cost-result-filter-hotels-main">
 
 						<p>Гостиница</p> 
 						<p>от 4000 Р.</p>
 
 					</div>
 
-					<a href="#" class="btn-row345-hotels-main">Подробнее</a> <!-- кнопка -->
+					<a href="#" class="btn-result-hotels-main">Подробнее</a> <!-- кнопка -->
 
-					<a href="#" class="btn-row345-hotels-main">Забронировать</a> <!-- кнопка -->
+					<a href="#" class="btn-result-hotels-main">Забронировать</a> <!-- кнопка -->
 
 				</div>
 
-				<div class="rating-row3-hotels-main"><!-- поле рейтинга прилипшее в к правому краю-->
+				<div class="rating-result-hotels-main"><!-- поле рейтинга прилипшее в к правому краю-->
 					
-					<div class="star-rating-row3-hotels-main"></div> <!-- звезды рейтинга будут выводится спрайтом -->
+					<div class="star-rating-result-hotels-main"></div> <!-- звезды рейтинга будут выводится спрайтом -->
 					
-					<p class="text-rating-row3-hotels-main">
+					<p class="text-rating-result-hotels-main">
 						Рейтинг:8,5
 					</p>
 
@@ -197,36 +185,33 @@
 			<!-- строка 3 конец -->
 			
 			<!-- строка 4 начало , это уже идут отели как рез поиска  -->
-			<section class="row4-hotels-main">
-
-				<figure class="img-row4-hotels-main"> <!-- картинка превью отеля -->
-
+			<section class="result-hotels-main">
+					
+					<!-- картинка превью отеля -->
 					<img src="http://placehold.it/135x90" alt="Hotels" width="135" height="90">
-
-				</figure>
 				
-				<div class="text-row4-hotels-main"><!-- блок с кнопками и заголовками справа от  превью отеля -->
+				<div class="text-result-hotels-main"><!-- блок с кнопками и заголовками справа от  превью отеля -->
 
 					<h2>Desert quail inn</h2>
 					
-					<div class="cost-text-row4-hotels-main">
+					<div class="cost-text-result-hotels-main">
 
 						<p>Гостиница</p> 
 						<p>от 3000 Р.</p>
 
 					</div>
 
-					<a href="#" class="btn-row345-hotels-main">Подробнее</a> <!-- кнопка -->
+					<a href="#" class="btn-result-hotels-main">Подробнее</a> <!-- кнопка -->
 
-					<a href="#" class="btn-row345-hotels-main">Забронировать</a> <!-- кнопка -->
+					<a href="#" class="btn-result-hotels-main">Забронировать</a> <!-- кнопка -->
 
 				</div>
 
-				<div class="rating-row4-hotels-main"><!-- поле рейтинга прилипшее в к правому краю-->
+				<div class="rating-result-hotels-main"><!-- поле рейтинга прилипшее в к правому краю-->
 					
-					<div class="star-rating-row4-hotels-main"></div> <!-- звезды рейтинга будут выводится спрайтом -->
+					<div class="star-rating-result-hotels-main"></div> <!-- звезды рейтинга будут выводится спрайтом -->
 					
-					<p class="text-rating-row4-hotels-main">
+					<p class="text-rating-result-hotels-main">
 						Рейтинг:8,9
 					</p>
 
@@ -239,26 +224,23 @@
 			<!-- строка 5 начало , это уже идут отели как рез поиска  -->
 			<section class="row5-hotels-main">
 
-				<figure class="img-row5-hotels-main"> <!-- картинка превью отеля -->
-
+					<!-- картинка превью отеля -->
 					<img src="http://placehold.it/135x90" alt="Hotels" width="135" height="90">
 
-				</figure>
-				
 				<div class="text-row5-hotels-main"><!-- блок с кнопками и заголовками справа от  превью отеля -->
 
 					<h2>villas at poco diablo</h2>
 					
-					<div class="cost-text-row5-hotels-main">
+					<div class="cost-text-result-hotels-main">
 
 						<p>Гостиница</p> 
 						<p>от 2000 Р.</p>
 
 					</div>
 
-					<a href="#" class="btn-row345-hotels-main">Подробнее</a> <!-- кнопка -->
+					<a href="#" class="btn-result-hotels-main">Подробнее</a> <!-- кнопка -->
 
-					<a href="#" class="btn-row345-hotels-main">Забронировать</a> <!-- кнопка -->
+					<a href="#" class="btn-result-hotels-main">Забронировать</a> <!-- кнопка -->
 
 				</div>
 
