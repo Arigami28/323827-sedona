@@ -5,8 +5,232 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+	<div class="page-wrapper"> <!-- центровщик страницы-->
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+		<!-- начало шапки страницы -->
+	    <header class="content-header">  <!-- контейнер шапки сайта -->
 
+	    	<nav class="nav-header"> <!-- навигация в шапке  ,каждый пункт меню 20% ширины -->
+	    		<ul>
+	    			<li>
+	    				<a href="#">Информация</a>
+	    			</li>
+
+	    			<li>
+	    				<a href="#">Фото и видео</a>
+	    			</li>
+	    			<li>
+	    				<a href="#">Карта штата</a>
+	    			</li>
+	    			<li>
+	    				<a href="#">Гостиницы</a>
+	    			</li>
+	    		</ul>
+
+	    	</nav>
+	    	
+	    	<div class="logo-header">    <!-- логотип в шапке сайта , по сколько это главная страница по этому здесь оно сделано не ссылкой , на остальных страницах завернуть в тег <a> -->
+	    		<img src="http://placehold.it/138x70" alt="Citi of Sedona"> 
+	    	</div>
+	    </header>
+	    <!-- конец шапки страницы -->
+		<!-- -------------------- -->
+		<!-- начало главноно контента -->
+	    <main>
+	    	<!-- подумал и решил разделить весь контент в main на 8 строк тегом section  -->
+	    	<!-- строка 1 начало  (это промо картинка с большим логотиоп SEDONA и другими надписями) -->
+
+				<section class="row1-main"> <!-- сама картинка с каньена будет задаватся фоном на css  -->
+			
+					<!-- поскольку используются сложные шрифты и разные цвета текста , каждой надписи свой тег div для болие удобной стилизации . Почему теги div без классов? потому что мне кажется что обращатся по nth-child удобнее -->	
+					<div>
+						Welcome
+					</div>
+
+					<div>  <!--  длинные тире можно сделать через :before/after { content:"\2014";}	в css-->
+							to the gorgeous
+					</div>
+						
+
+					<div>
+						<h1>Sedona</h1>
+					</div>
+
+					<div>
+						Because the Grand Canyon sucks <!--  для ковычек добавить в css - > левая ковычка :before { content:"\201C";} , правая :after { content:"\201D";}	 -->
+					</div> 
+
+				</section>
+	    	<!-- строка 1 конец -->
+
+	    	<!-- 2 строка это начало строк преймуществ (заголовок после которого начинаются 4 строки свзязаных с преймуществами -->
+	    		<section class="row2-main">
+	    			
+				<h2>Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
+
+				<p>Расмотрим 5 причин, по которым седона круче , чем гранд каньон!</p>
+
+
+	    		</section>
+	    	<!-- строка 2 конец -->
+
+	    	<!-- строка 3 начало , это 1 преймущество -->
+				<section class="row3-main"> <!-- картинка какой то лавка с права будет сделана фоном на css со смещенной позицией  -->
+					<div class="text-row3-main">
+						<h2>Настроящий городок</h2>
+						<p>	№ 1 </p>  <!--  длинные тире можно сделать через :before/after { content:"\2014";}	в css-->
+						<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+					</div>
+				</section>
+	    	<!-- строка 3 конец -->
+
+	    	<!-- строка 4 начало , иконки ЖИЛЬЕ ЕДА СУВЕНИРЫ и мини описания -->
+	    		<section class="row4-main"> 
+
+	    			<div class="house-row4-main">
+
+						<span class="icon-row4 icon-house"></span> <!-- сами иконки будут задаватся через спраит  фоном в css-->
+						<h2>Жилье</h2>
+						<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+	    				
+	    			</div>
+
+	    			<div class="food-row4-main">
+
+	    				<span class="icon-row4 icon-food"></span>
+
+						<h2>Еда</h2>
+						<p>Всегда заказывайте фирменный бургер</p>
+
+	    			</div>
+
+	    			<div class="souvenirs-row4-main">
+
+	    				<span class="icon-row4 icon-edit"></span>
+
+						<h2>Сувениры</h2>
+						<p>не только китайского , но и местного производства!</p>
+
+	    			</div>
+	    			
+	    		</section>
+	    	<!-- строка 4 конец -->
+
+			<!-- строка 5 начало ,это 2 преймущество -->
+				<section class="row5-main">
+					<!-- картинка каньона слева будет сделана фоном на css со смещенной позицией  -->
+					<div class="text-row3-main">
+						<h2>Там есть мост дьявола</h2>
+						<p>	№ 2 </p>  <!--  длинные тире можно сделать через :before/after { content:"\2014";}	в css-->
+						<p>Да, по нему можно пройти! если конечно вы осмелитесь</p>
+					</div>
+				</section>
+			<!-- строка 5 конец -->
+			
+			<!-- строка 6 начало ,это 3 , 4, 5 преймуществ-->
+				<section class="row6-main">
+
+					<div class="area-row6-main">
+
+						<h2>Небольшая площадь</h2>
+						<p>№3</p> <!--  длинные тире можно сделать через :before/after { content:"\2014";}	в css-->
+						<p>Все достопримечательности находятся очень близко</p>
+
+					</div>
+
+					<div class="road-row6-main">
+
+						<h2>Красивая дорога</h2>
+						<p>№4</p> <!--  длинные тире можно сделать через :before/after { content:"\2014";}	в css-->
+						<p>Ехать в седону из лас-вегаса совсем не скучно!</p>		
+
+					</div>
+
+					<div class="tourist-row6-main">
+
+						<h2>Мало туристов</h2>
+						<p>№5</p> <!--  длинные тире можно сделать через :before/after { content:"\2014";}	в css-->
+						<p>Большинство едет в град каньон и толпится там</p>
+
+					</div>
+
+				</section>
+			<!-- строка 6 конец -->
+
+			<!-- строка 7 начало секция с кнопкой поиска гостиницы и ее формой  -->
+				<section class="row7-main">
+
+					<h2>Заинтересовались?</h2>
+					<p>Укажите предпочитаемые даты поездки, и мы покажем вам лучшие предложения гостиницы в седоне</p>
+
+					<div class="btn-row7-main"><!-- в css будет прописано :active свойство котрое будет при нажатии открывать форму -->
+						<h2>Поиск гостиницы в седоне</h2>
+
+						<form action="#" hidden>
+
+							<label for="date-in"></label><!-- дата заеда -->
+							<input type="text" id="date-in" name="date-in" value="24 апреля 2017" >
+							<span  	class="icon-row7"></span> 
+							<!-- в тех задании сказано что иконка календаря должна быть оформлена отдельным тегом  -->
+
+
+
+							<label for="date-out"></label><!-- дата выезда -->
+							<input type="text" id="date-out" name="date-in" value="24 апреля 2017" >
+							<span class="icon-row7"></span><!-- в тех задании сказано что иконка календаря должна быть оформлена отдельным тегом  -->
+
+							<label for="btn-number1">Взрослые</label><!-- Врослые счет  , оживление формы идет на JS-->
+							<input type="button" value="-" class="btn-minus-row7" onclick="" >
+						    <input type="text"  id="btn-number1" name="btn-row7" value="0" class="btn-number1-row7" >
+						    <input type="button" value="+" class="btn-plus-row7" onclick="" >
+							
+
+							<label for="btn-number2">Дети</label><!-- Дети счет, оживление формы идет на JS -->
+							<input type="button" value="-" class="btn-minus-row7" onclick="" >
+						    <input type="text"  id="btn-number2" name="btn-row7" value="0" class="btn-number1-row7" >
+						    <input type="button" value="+" class="btn-plus-row7" onclick="" >
+
+
+							<input type="button" name="btn-icon-row7" value="Найти" class="btn-icon-row7"><!-- кнопка задействования формы -->
+
+
+						</form>
+					</div>
+					
+				</section>
+			<!-- строка 7 конец -->
+
+			<!-- строка 8 начало -->
+				<section class="row8-main"> <!-- это блок для карты которая идет либо фоном либо можно добавить реальную карто на фон с зумом и т.д. допусти из google api -->	
+				</section>
+			<!-- строка 8 конец -->
+	    </main><!-- -->
+	    <!-- конец главного контента -->
+	    <!-- -------------------- -->
+		<!-- начало подвала -->
+	    <footer>
+	    	
+	    		<section class="info-footer">
+	    			#VISITSEDONA
+	    		</section>
+
+	    		<section class="social-footer"> <!-- соц. сети -->
+
+		          <a class="social-btn-footer twitter-bnt-footer" href="#">Twitter</a>
+		          <a class="social-btn-footer facebook-bnt-footer" href="#">Facebook</a> <!--  иконки добавляются через спрайт-->
+		          <a class="social-btn-footer youtube-bnt-footer" href="#">YouTube</a>
+
+		        </section>
+
+		        <section class="copyright-footer"> <!-- копирайтинг , сделано ссылкой >=< картинкой -->
+
+		          <a class="btn-footer" href="https://htmlacademy.ru"> 
+		          	<img src="http://placehold.it/194x40" width="194" height="40" alt="HTMLACADEMY.RU">
+		          </a>
+
+		        </section>
+	    </footer>
+		<!-- конец  подвала-->
+	</div><!-- конец  блока центровки-->
   </body>
 </html>
