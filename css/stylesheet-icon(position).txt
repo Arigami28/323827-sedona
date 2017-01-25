@@ -1,0 +1,179 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon-arrow-down {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -5px;
+}
+
+.sprite-icon-arrow-down-active {
+    width: 11px;
+    height: 10px;
+    background-position: -26px -5px;
+}
+
+.sprite-icon-arrow-down-hover {
+    width: 11px;
+    height: 10px;
+    background-position: -47px -5px;
+}
+
+.sprite-icon-arrow-up {
+    width: 11px;
+    height: 10px;
+    background-position: -68px -5px;
+}
+
+.sprite-icon-arrow-up-active {
+    width: 11px;
+    height: 10px;
+    background-position: -89px -5px;
+}
+
+.sprite-icon-arrow-up-hover {
+    width: 11px;
+    height: 10px;
+    background-position: -110px -5px;
+}
+
+.sprite-icon-burger {
+    width: 74px;
+    height: 70px;
+    background-position: -131px -5px;
+}
+
+.sprite-icon-calendar {
+    width: 21px;
+    height: 22px;
+    background-position: -215px -5px;
+}
+
+.sprite-icon-calendar-active {
+    width: 21px;
+    height: 22px;
+    background-position: -246px -5px;
+}
+
+.sprite-icon-calendar-hover {
+    width: 21px;
+    height: 22px;
+    background-position: -277px -5px;
+}
+
+.sprite-icon-chekbox-dis {
+    width: 22px;
+    height: 22px;
+    background-position: -308px -5px;
+}
+
+.sprite-icon-chekbox-dis-off {
+    width: 22px;
+    height: 22px;
+    background-position: -340px -5px;
+}
+
+.sprite-icon-chekbox-en {
+    width: 26px;
+    height: 22px;
+    background-position: -372px -5px;
+}
+
+.sprite-icon-chekbox-en-off {
+    width: 26px;
+    height: 22px;
+    background-position: -408px -5px;
+}
+
+.sprite-icon-facebook {
+    width: 10px;
+    height: 19px;
+    background-position: -444px -5px;
+}
+
+.sprite-icon-facebook-active {
+    width: 10px;
+    height: 19px;
+    background-position: -464px -5px;
+}
+
+.sprite-icon-gift {
+    width: 64px;
+    height: 76px;
+    background-position: -484px -5px;
+}
+
+.sprite-icon-house {
+    width: 75px;
+    height: 72px;
+    background-position: -558px -5px;
+}
+
+.sprite-icon-minus {
+    width: 12px;
+    height: 3px;
+    background-position: -643px -5px;
+}
+
+.sprite-icon-minus-active {
+    width: 12px;
+    height: 3px;
+    background-position: -665px -5px;
+}
+
+.sprite-icon-minus-hover {
+    width: 12px;
+    height: 3px;
+    background-position: -687px -5px;
+}
+
+.sprite-icon-plus {
+    width: 11px;
+    height: 11px;
+    background-position: -709px -5px;
+}
+
+.sprite-icon-plus-active {
+    width: 11px;
+    height: 11px;
+    background-position: -730px -5px;
+}
+
+.sprite-icon-plus-hover {
+    width: 11px;
+    height: 11px;
+    background-position: -751px -5px;
+}
+
+.sprite-icon-star {
+    width: 18px;
+    height: 17px;
+    background-position: -772px -5px;
+}
+
+.sprite-icon-twitter {
+    width: 17px;
+    height: 15px;
+    background-position: -800px -5px;
+}
+
+.sprite-icon-twitter-active {
+    width: 17px;
+    height: 15px;
+    background-position: -827px -5px;
+}
+
+.sprite-icon-youtube {
+    width: 20px;
+    height: 16px;
+    background-position: -854px -5px;
+}
+
+.sprite-icon-youtube-active {
+    width: 20px;
+    height: 16px;
+    background-position: -884px -5px;
+}
