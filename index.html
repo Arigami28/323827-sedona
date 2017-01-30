@@ -2,204 +2,206 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-	<div class="page-wrapper"> <!-- центровщик страницы-->
-
 		<!-- начало шапки страницы -->
-	    <header class="content-header">  <!-- контейнер шапки сайта -->
+	    <header class="content-header clearfix">  <!-- контейнер шапки сайта -->
+			<div class="container">	 <!-- центровщик -->
+		    	<nav class="nav-header"> <!-- навигация в шапке  ,каждый пункт меню 20% ширины -->
+		    		<ul>
+		    			<li>
+		    				<a href="#">Информация</a>
+		    			</li>
 
-	    	<nav class="nav-header"> <!-- навигация в шапке  ,каждый пункт меню 20% ширины -->
-	    		<ul>
-	    			<li>
-	    				<a href="#">Информация</a>
-	    			</li>
+		    			<li>
+		    				<a href="#">Фото и видео</a>
+		    			</li>
+		    			<li>
+		    				<a href="#">Карта штата</a>
+		    			</li>
+		    			<li>
+		    				<a href="#">Гостиницы</a>
+		    			</li>
+		    		</ul>
+		    	</nav>
+		    	
+		    	<div class="logo-header">   
+		    		<img src="img/logo.png" alt="Citi of Sedona"> 
+		    	</div>
 
-	    			<li>
-	    				<a href="#">Фото и видео</a>
-	    			</li>
-	    			<li>
-	    				<a href="#">Карта штата</a>
-	    			</li>
-	    			<li>
-	    				<a href="#">Гостиницы</a>
-	    			</li>
-	    		</ul>
-
-	    	</nav>
-	    	
-	    	<div class="logo-header">    <!-- логотип в шапке сайта , по сколько это главная страница по этому здесь оно сделано не ссылкой , на остальных страницах завернуть в тег <a> -->
-	    		<img src="img/logo.png" alt="Citi of Sedona"> 
-	    	</div>
+		    </div>	
 	    </header>
 	    <!-- конец шапки страницы -->
 		<!-- -------------------- -->
 		<!-- начало главноно контента -->
-	    <main>
-	    	<!-- подумал и решил разделить весь контент в main на 8 строк  -->
-	    	<!-- строка 1 начало  (это промо картинка с большим логотиоп SEDONA и другими надписями) -->
-				<div class="promo-main"> <!-- сама картинка каньена и надписи будут  задаватся фоном на css  --></sdiv>
-	    	<!-- строка 1 конец -->
+	    <main class="content">
+		    <div class="container ">	 <!-- центровщик -->
 
-	    	<!-- 2 строка это начало строк преймуществ (заголовок после которого начинаются 4 строки свзязаных с преймуществами -->
-	    		<section class="title-main">
-	    			
-				<h2>Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
+				<!-- строка 1 начало -->
+					<div class="promo-main "> </div>
+		    	<!-- строка 1 конец -->
 
-				<p>Расмотрим 5 причин, по которым седона круче , чем гранд каньон!</p>
+		    	<!-- 2 строка это начало строк преймуществ (заголовок после которого начинаются 4 строки свзязаных с преймуществами -->
+		    		<section class="preview-title">
+		    			
+					<h2>Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
 
-
-	    		</section>
-	    	<!-- строка 2 конец -->
-
-	    	<!-- строка 3 начало , это 1 преймущество -->
-				<section class="preview-city-main"> <!-- картинка какой то лавка с права будет сделана фоном на css со смещенной позицией  -->
-
-					<img src="img/fon-promo-shop.jpg" alt="shop" width="800" height="256"> 
-
-					<div class="text-preview-city-main">
-
-						<h2>Настроящий городок</h2>
-						<p>	№ 1 </p>  <!--  длинные тире можно сделать через :before/after { content:"\2014";}	в css-->
-						<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-
-					</div>
-
-				</section>
-	    	<!-- строка 3 конец -->
-
-	    	<!-- строка 4 начало , иконки ЖИЛЬЕ ЕДА СУВЕНИРЫ и мини описания -->
-	    		<section class="preview-main"> 
-
-	    			<div class="feature-preview-main"><!-- иконка будет задаватся фотоно для самого элемента-->
-
-						<h2>Жилье</h2>
-						<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-	    				
-	    			</div>
-
-	    			<div class="feature-preview-main"><!-- иконка будет задаватся фотоно для самого элемента-->
-
-						<h2>Еда</h2>
-						<p>Всегда заказывайте фирменный бургер</p>
-
-	    			</div>
-
-	    			<div class="feature-preview-main"><!-- иконка будет задаватся фотоно для самого элемента-->
-
-						<h2>Сувениры</h2>
-						<p>не только китайского , но и местного производства!</p>
-
-	    			</div>
-	    			
-	    		</section>
-	    	<!-- строка 4 конец -->
-
-			<!-- строка 5 начало ,это 2 преймущество -->
-				<section class="preview-city-main">
-					<!-- картинка каньона слева и текст справа   -->
-
-					<img src="img/fon-promo-canyon-devil.jpg" alt="canyon" width="800" height="324">
-
-					<div class="text-preview-city-main">
-
-						<h2>Там есть мост дьявола</h2>
-						<p>	№ 2 </p>  <!--  длинные тире можно сделать через :before/after { content:"\2014";}	в css-->
-						<p>Да, по нему можно пройти! если конечно вы осмелитесь</p>
-
-					</div>
-
-				</section>
-			<!-- строка 5 конец -->
-			
-			<!-- строка 6 начало ,это 3 , 4, 5 преймуществ-->
-				<section class="description-main">
-
-					<div class="text-description-main">
-
-						<h2>Небольшая площадь</h2>
-						<p>№3</p> <!--  длинные тире можно сделать через :before/after { content:"\2014";}	в css-->
-						<p>Все достопримечательности находятся очень близко</p>
-
-					</div>
-
-					<div class="text-description-main">
-
-						<h2>Красивая дорога</h2>
-						<p>№4</p> <!--  длинные тире можно сделать через :before/after { content:"\2014";}	в css-->
-						<p>Ехать в седону из лас-вегаса совсем не скучно!</p>		
-
-					</div>
-
-					<div class="text-description-main">
-
-						<h2>Мало туристов</h2>
-						<p>№5</p> <!--  длинные тире можно сделать через :before/after { content:"\2014";}	в css-->
-						<p>Большинство едет в град каньон и толпится там</p>
-
-					</div>
-
-				</section>
-			<!-- строка 6 конец -->
-
-			<!-- строка 7 начало секция с кнопкой поиска гостиницы и ее формой  -->
-				<section class="form-main">
-
-					<h2>Заинтересовались?</h2>
-					<p>Укажите предпочитаемые даты поездки, и мы покажем вам лучшие предложения гостиницы в седоне</p>
-
-					<div class="btn-form-main">
-						<a href="#" class="btnjs-form-main">Поиск гостиницы в седоне</a><!--открытие формы будет вызвано JS -->
-
-						<form action="#" hidden>
-
-							<label for="date-in">Дата заезда</label><!-- дата заеда -->
-							<input type="text" id="date-in" name="date-in" value="24 апреля 2017" >
-							<span  	class="icon-form-main"></span> 
-							<!-- в тех задании сказано что иконка календаря должна быть оформлена отдельным тегом  -->
+					<p>Расмотрим 5 причин, по которым седона круче , чем гранд каньон!</p>
 
 
+		    		</section>
+		    	<!-- строка 2 конец -->
 
-							<label for="date-out">Дата выезда</label><!-- дата выезда -->
-							<input type="text" id="date-out" name="date-in" value="24 апреля 2017" >
-							<span class="icon-form-main"></span><!-- в тех задании сказано что иконка календаря должна быть оформлена отдельным тегом  -->
+		    	<!-- строка 3 начало , это 1 преймущество -->
+					<section class="preview-city clearfix"> <!-- картинка какой то лавка с права будет сделана фоном на css со смещенной позицией  -->
 
-							<label for="btn-number1">Взрослые</label><!-- Врослые счет  -->
-							<input type="button" value="-" class="btn-minus-form-main" onclick="" >
-						    <input type="text"  id="btn-number1" name="btn-form-main" value="0" class="btn-number1-form-main" >
-						    <input type="button" value="+" class="btn-plus-form-main" onclick="" >
-							
+						<img src="img/fon-promo-shop.jpg" alt="shop" width="800" height="256"> 
 
-							<label for="btn-number2">Дети</label><!-- Дети счет -->
-							<input type="button" value="-" class="btn-minus-form-main" onclick="" >
-						    <input type="text"  id="btn-number2" name="btn-form-main" value="0" class="btn-number1-form-main" >
-						    <input type="button" value="+" class="btn-plus-form-main" onclick="" >
+						<div class="text-preview-city">
+
+							<h2>Настроящий городок</h2>
+							<p>	№ 1 </p>  <!--  длинные тире можно сделать через :before/after { content:"\2014";}	в css-->
+							<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+
+						</div>
+					</section>
+		    	<!-- строка 3 конец -->
+
+		    	<!-- строка 4 начало , иконки ЖИЛЬЕ ЕДА СУВЕНИРЫ и мини описания -->
+		    		<section class="advantage clearfix"> 
+
+		    			<div class="icon-advantage"><!-- иконка будет задаватся фотоно для самого элемента-->
+
+							<h2>Жилье</h2>
+							<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+		    				
+		    			</div>
+
+		    			<div class="icon-advantage"><!-- иконка будет задаватся фотоно для самого элемента-->
+
+							<h2>Еда</h2>
+							<p>Всегда заказывайте фирменный бургер</p>
+
+		    			</div>
+
+		    			<div class="icon-advantage"><!-- иконка будет задаватся фотоно для самого элемента-->
+
+							<h2>Сувениры</h2>
+							<p>не только китайского , но и местного производства!</p>
+
+		    			</div>
+		    			
+		    		</section>
+		    	<!-- строка 4 конец -->
+
+				<!-- строка 5 начало ,это 2 преймущество -->
+					<section class="preview-canyon clearfix">
+						<!-- картинка каньона слева и текст справа   -->
+
+						<img src="img/fon-promo-canyon-devil.jpg" alt="canyon" width="800" height="324">
+
+						<div class="text-preview-canyon">
+
+							<h2>Там есть мост дьявола</h2>
+							<p>	№ 2 </p>  <!--  длинные тире можно сделать через :before/after { content:"\2014";}	в css-->
+							<p>Да, по нему можно пройти! если конечно вы осмелитесь</p>
+
+						</div>
+
+					</section>
+				<!-- строка 5 конец -->
+				
+				<!-- строка 6 начало ,это 3 , 4, 5 преймуществ-->
+					<section class="description clearfix">
+
+						<div class="text-description">
+
+							<h2>Небольшая площадь</h2>
+							<p>№3</p> <!--  длинные тире можно сделать через :before/after { content:"\2014";}	в css-->
+							<p>Все достопримечательности находятся очень близко</p>
+
+						</div>
+
+						<div class="text-description">
+
+							<h2>Красивая дорога</h2>
+							<p>№4</p> <!--  длинные тире можно сделать через :before/after { content:"\2014";}	в css-->
+							<p>Ехать в седону из лас-вегаса совсем не скучно!</p>		
+
+						</div>
+
+						<div class="text-description">
+
+							<h2>Мало туристов</h2>
+							<p>№5</p> <!--  длинные тире можно сделать через :before/after { content:"\2014";}	в css-->
+							<p>Большинство едет в град каньон и толпится там</p>
+
+						</div>
+
+					</section>
+				<!-- строка 6 конец -->
+
+				<!-- строка 7 начало секция с кнопкой поиска гостиницы и ее формой  -->
+					<section class="form-main">
+
+						<h2>Заинтересовались?</h2>
+						<p>Укажите предпочитаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиницы в седоне</p>
+
+						<div class="btn-form-main">
+							<a href="#" class="btnjs-form-main">Поиск гостиницы в седоне</a><!--открытие формы будет вызвано JS -->
+
+							<form action="#" hidden>
+
+								<label for="date-in">Дата заезда</label><!-- дата заеда -->
+								<input type="text" id="date-in" name="date-in" value="24 апреля 2017" >
+								<span  	class="icon-form-main"></span> 
+								<!-- в тех задании сказано что иконка календаря должна быть оформлена отдельным тегом  -->
 
 
-							<input type="submit" name="btn-icon-form-main" value="Найти" class="btn-icon-form-main"><!-- кнопка задействования формы -->
+
+								<label for="date-out">Дата выезда</label><!-- дата выезда -->
+								<input type="text" id="date-out" name="date-in" value="24 апреля 2017" >
+								<span class="icon-form-main"></span><!-- в тех задании сказано что иконка календаря должна быть оформлена отдельным тегом  -->
+
+								<label for="btn-number1">Взрослые</label><!-- Врослые счет  -->
+								<input type="button" value="-" class="btn-minus-form-main" onclick="" >
+							    <input type="text"  id="btn-number1" name="btn-form-main" value="0" class="btn-number1-form-main" >
+							    <input type="button" value="+" class="btn-plus-form-main" onclick="" >
+								
+
+								<label for="btn-number2">Дети</label><!-- Дети счет -->
+								<input type="button" value="-" class="btn-minus-form-main" onclick="" >
+							    <input type="text"  id="btn-number2" name="btn-form-main" value="0" class="btn-number1-form-main" >
+							    <input type="button" value="+" class="btn-plus-form-main" onclick="" >
 
 
-						</form>
-					</div>
-					
-				</section>
-			<!-- строка 7 конец -->
+								<input type="submit" name="btn-icon-form-main" value="Найти" class="btn-icon-form-main"><!-- кнопка задействования формы -->
 
-			<!-- строка 8 начало -->
-				<section class="map-main"> <!-- это блок для карты которая идет либо фоном либо можно добавить реальную карто на фон с зумом и т.д. допусти из google api -->	
-				</section>
-			<!-- строка 8 конец -->
+
+							</form>
+						</div>
+						
+					</section>
+				<!-- строка 7 конец -->
+
+				<!-- строка 8 начало -->
+					<section class="map-main"> <!-- это блок для карты которая идет либо фоном либо можно добавить реальную карто на фон с зумом и т.д. допусти из google api -->	
+					</section>
+				<!-- строка 8 конец -->
+			</div>	
 	    </main><!-- -->
 	    <!-- конец главного контента -->
 	    <!-- -------------------- -->
 		<!-- начало подвала -->
-	    <footer>
-	    	
-	    		<section class="info-footer">
+	    <footer class="content-footer ">
+	    	<div class="container clearfix">
+	    		<span class="info-footer">
 	    			#VISITSEDONA
-	    		</section>
+	    		</span>
 
 	    		<section class="social-footer"> <!-- соц. сети -->
 
@@ -215,9 +217,9 @@
 		          	<img src="img/logo-htmlacademy.png" width="194" height="40" alt="HTMLACADEMY.RU">
 		          </a>
 
-		        </section>
+		        </section><!-- центровщик -->
+		    </div>    
 	    </footer>
 		<!-- конец  подвала-->
-	</div><!-- конец  блока центровки-->
   </body>
 </html>

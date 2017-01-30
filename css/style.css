@@ -1,9 +1,211 @@
 body {
 	font-family: "PT Sans", "Arial", serif;
+		margin: 0px;
+	padding: 0px;
+	 min-width: 1280px;
+
 }
-/* Посмотрел я на макет и увидел что в макете страницы  index.html у меня есть только заголовки h2 и все
- (хотя возможно под заголовками и не имелись ввиду теги h*) ...и встречаются 3 разных 
-интерлиньяж этих заголовков ,а так же 2 разных размера шрифта ,а на странице hotels.html h2 в макете однообразны ... */
+.container {
+	 width: 1200px;
+	 margin: 0 auto;
+	 padding: 0 40px;
+}
+/*распорк float*/
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.nav-header li {
+	display: inline-block;
+	width: 240px;
+}
+.nav-header li:nth-child(2) {
+	margin-right: 95px;
+}
+/* index.html*/
+.tegfilter-hotels li {
+	display: inline-block;
+}
+
+
+.content-header {
+}
+
+
+.preview-title {
+	 clear: both;
+	 width: 576px;
+	 margin-left: auto;
+	 margin-right: auto;
+	 margin-bottom: 60px;
+}
+.promo-main {
+	padding-top: 1px;
+}
+
+.preview-city img {
+	float: right;
+	width: 800px;
+}
+.text-preview-city {
+	float: left;
+	width: 400px;
+}
+
+.icon-advantage {
+	float: left;
+	width: 400px;
+	margin-bottom: 88px;
+	margin-top: 61px;
+}
+
+.preview-canyon img {
+	float: left;
+	width: 800px;
+}
+.text-preview-canyon {
+	float: right;
+	width: 400px;
+
+}
+
+.text-description {
+	float: left;
+	width: 400px;
+	margin-bottom: 60px;
+	margin-top: 49px;
+}
+
+.form-main {
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	width: 576px;
+}
+
+.info-footer {
+	width: 240px;
+	float: left;
+	margin-left: 73px;
+	margin-right: 88px;
+
+}
+.social-footer {
+	width: 400px;
+	margin-right: 88px;
+	float: left;
+
+}
+.copyright-footer {
+	float: right;
+	width: 240px;
+	margin-left: 73px;
+
+}
+
+/* hotel.html*/
+.infrastructure-filter-holes {
+	margin-left: 30px;
+	float: left;
+	width: 240px;
+}
+.type-filter-holes {
+	float: left;
+	width: 288px;
+	margin-right: 200px;
+
+}
+.content-header {
+	padding-top: 1px;
+}
+.content-header .container {
+	padding-top: 1px;
+}
+/*
+.result-hotels-1 {
+	float: left;
+	width: 100%;
+}
+
+.result-hotels-1 img {
+	float: left;
+	width: 135px;
+}
+.text-result-hotels-1 {
+	float: left;
+	width: 260px;
+}
+.rating-result-hotels-1 {
+	float: right;
+	width: 111px;
+}
+
+
+.result-hotels-2 {
+	float: left;
+	width: 100%;
+}
+
+.result-hotels-2 img {
+	float: left;
+	width: 135px;
+}
+.text-result-hotels-2 {
+	float: left;
+	width: 260px;
+}
+.rating-result-hotels-2 {
+	float: right;
+	width: 111px;
+}
+
+
+.result-hotels-3 {
+	float: left;
+	width: 100%;
+}
+
+.result-hotels-3 img {
+	float: left;
+	width: 135px;
+}
+.text-result-hotels-3 {
+	float: left;
+	width: 260px;
+}
+.rating-result-hotels-3 {
+	float: right;
+	width: 111px;
+}
+
+
+*/
+.result-hotels {
+
+	margin-bottom: 30px;
+	width: 100%;	
+}
+.result-hotels img {
+	float: left;
+	width: 135px;
+}
+.text-result-hotels {
+
+	margin-left: 30px;
+	float: left;
+	width: 270px;
+}
+.rating-result-hotels {
+		float: right;
+	width: 111px;
+}
+
+
+
+
+
 
 /* index.html */
 .title-main h2 {
