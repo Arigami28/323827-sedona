@@ -18,21 +18,21 @@
     <header>
            <ul class="flex-container flex-container__1">
             <li class="flex-element"> 
-              <a href="#">Информация</a>
+              <a href="#" class="btn-nav">Информация</a>
             </li>
             <li class="flex-element">
-              <a href="#">Фото и видео</a>
+              <a href="#" class="btn-nav">Фото и видео</a>
             </li>
             <li class="flex-element">
-              <a href="#">Карта штата</a>
+              <a href="#" class="btn-nav">Карта штата</a>
             </li>
             <li class="flex-element">
-              <a href="#" >Гостиницы</a>
+              <a href="#" class="btn-nav">Гостиницы</a>
             </li>
           </ul>
 
             <div class="logo-header">   
-                <img src="img/logo.png" alt="Citi of Sedona" width="auto" height="auto"> 
+                <img src="img/logo.png" alt="Citi of Sedona" width="138" height="69"> 
             </div>
     </header>
 
@@ -43,7 +43,7 @@
 
      <section class="flex-container flex-container__3">
         <div class="flex-element">
-            <div class="flex-element-wrap">
+            <div class="promo-title">
               <h2>СЕДОНА — небольшой городок в АРИЗОНЕ,<br> заслуживающий большего!</h2>
               <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
             </div>
@@ -51,7 +51,7 @@
     </section>
 
     <section class="flex-container flex-container__4">
-        <div class="flex-element">
+        <div class="flex-element advantages-1">
           <h2>НАСТОЯЩИЙ<br>ГОРОДОК</h2>
           <p>&#8212;№1&#8212;</p>
           <p>СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ,<br> ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
@@ -62,15 +62,15 @@
       </section> 
 
       <section class="flex-container flex-container__5">
-       <div class="flex-element ">
+       <div class="flex-element advantages-2">
              <h2>Жилье</h2>
            <p>Рекомендуем пожить в настоящем<br>мотеле, все как в кино!</p>
        </div> 
-         <div class="flex-element">
+         <div class="flex-element advantages-2">
              <h2>ЕДА</h2>
            <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,<br>Вы НЕ разочаруетесь!</p>
        </div> 
-          <div class="flex-element">
+          <div class="flex-element advantages-2">
              <h2>СУВЕНИРЫ</h2>
            <p>Не только китайского, но и местного<br> производства!</p>
        </div>    
@@ -82,7 +82,7 @@
         <div class="flex-element">
               <img src="img/fon-promo-canyon-devil.jpg" alt="shop" width="100%" height="auto"> 
         </div> 
-        <div class="flex-element">
+        <div class="flex-element advantages-3">
               <h2>Там есть<br> мост дьявола</h2>
               <p>&#8212;№2&#8212;</p>
               <p>Да, по нему можно пройти! если конечно<br> вы осмелитесь</p>
@@ -91,31 +91,33 @@
 
 
         <div class="flex-container flex-container__7">
-       <div class="flex-element">
+       <div class="flex-element advantages-4">
             <h2>Небольшая<br>площадь</h2>
             <p>&#8212;№3&#8212;</p>
             <p>Все достопримечательности<br> находятся очень близко</p>
        </div> 
-         <div class="flex-element">
+         <div class="flex-element advantages-4">
             <h2>Красивая<br>дорога</h2>
             <p>&#8212;№4&#8212;</p> 
             <p>Ехать в седону из лас-вегаса совсем<br> не скучно!</p>
        </div> 
-          <div class="flex-element">
+          <div class="flex-element advantages-4">
             <h2>Мало<br>туристов</h2>
             <p>&#8212;№5&#8212;</p> 
             <p>Большинство едет в град каньон и<br> толпится там</p>
        </div>    
       </div> 
 
+
         <div class="flex-container flex-container__8">
            <div class="flex-element">
-                <h2>Заинтересовались?</h2>
-                <p>Укажите предпочитаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиницы в седоне</p>
-
-                <div class="form-search">
+                <div class="search-title">
+                      <h2>Заинтересовались?</h2>             
+                      <p>Укажите предпочитаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиницы в седоне</p>
+                </div>
+                <div class="search-btn">
                   <a href="#" class="btnjs">Поиск гостиницы в седоне</a>
-                  <form action="#" method="get" >
+                  <form action="#" method="get" class="form-search" >
 
                     <label for="date-in">Дата заезда:</label>
                     <input type="text" id="date-in" name="date-in-text" value="24 апреля 2017" >
@@ -126,17 +128,17 @@
                     <span class="icon-date-out"></span>
 
                     <label for="age1-text">Взрослые:</label>
-                    <input type="button"  class="btn-minus-age1" >
+                    <input type="button"  class="btn-minus-age1" value=" ">
                     <input type="text"  id="age1-text" name="age1-text" value="0" class="age-text" >
-                    <input type="button" class="btn-plus-age1">
+                    <input type="button" class="btn-plus-age1" value=" ">
                     
 
                     <label for="age2-text">Дети:</label>
-                    <input type="button"  class="btn-minus-age2">
+                    <input type="button"  class="btn-minus-age2" value=" ">
                     <input type="text"  id="age2-text" name="age2-text" value="0" class="age-text" >
-                    <input type="button" class="btn-plus-age2">
+                    <input type="button" class="btn-plus-age2" value=" ">
 
-                    <input type="submit" name="btn-form" value="Найти" >
+                    <input type="submit" name="btn-form" value="Найти">
 
                   </form>
 
@@ -155,7 +157,7 @@
      <footer>
        <div class="flex-container flex-container__10">
           <div class="flex-element">
-               <a href="#">#VISITSEDONA</a>
+               <a href="#" class="heshteg-btn">#VISITSEDONA</a>
          </div> 
 
           <div class="flex-element">
@@ -166,11 +168,8 @@
             </div>  
           </div> 
           <div class="flex-element">
-
-                  <p>WEBSITE BY</p>
-
-                  <a class="btn-footer-logo" href="https://htmlacademy.ru"></a>
-   
+                  <p class="text-footer-logo">WEBSITE BY</p>
+                  <a class="img-footer-logo" href="https://htmlacademy.ru"></a>  
            </div> 
         </div> 
      </footer>
