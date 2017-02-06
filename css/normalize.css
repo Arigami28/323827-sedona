@@ -33,11 +33,7 @@ body {
  */
 
 article,
-aside,
-footer,
-header,
-nav,
-section {
+aside{
   display: block;
 }
 

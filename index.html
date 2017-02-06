@@ -1,225 +1,190 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <title>HTML Academy: Седона</title>
+
   </head>
-  <body>
-		<!-- начало шапки страницы -->
-	    <header class="content-header clearfix">  <!-- контейнер шапки сайта -->
-			<div class="container">	 <!-- центровщик -->
-		    	<nav class="nav-header"> <!-- навигация в шапке  ,каждый пункт меню 20% ширины -->
-		    		<ul>
-		    			<li>
-		    				<a href="#">Информация</a>
-		    			</li>
 
-		    			<li>
-		    				<a href="#">Фото и видео</a>
-		    			</li>
-		    			<li>
-		    				<a href="#">Карта штата</a>
-		    			</li>
-		    			<li>
-		    				<a href="#">Гостиницы</a>
-		    			</li>
-		    		</ul>
-		    	</nav>
-		    	
-		    	<div class="logo-header">   
-		    		<img src="img/logo.png" alt="Citi of Sedona"> 
-		    	</div>
+  <body >
+ 
+<div class="wrap">
 
-		    </div>	
-	    </header>
-	    <!-- конец шапки страницы -->
-		<!-- -------------------- -->
-		<!-- начало главноно контента -->
-	    <main class="content">
-		    <div class="container ">	 <!-- центровщик -->
+    <header>
+           <ul class="flex-container flex-container__1">
+            <li class="flex-element"> 
+              <a href="#">Информация</a>
+            </li>
+            <li class="flex-element">
+              <a href="#">Фото и видео</a>
+            </li>
+            <li class="flex-element">
+              <a href="#">Карта штата</a>
+            </li>
+            <li class="flex-element">
+              <a href="#" >Гостиницы</a>
+            </li>
+          </ul>
 
-				<!-- строка 1 начало -->
-					<div class="promo-main "> </div>
-		    	<!-- строка 1 конец -->
+            <div class="logo-header">   
+                <img src="img/logo.png" alt="Citi of Sedona" width="auto" height="auto"> 
+            </div>
+    </header>
 
-		    	<!-- 2 строка это начало строк преймуществ (заголовок после которого начинаются 4 строки свзязаных с преймуществами -->
-		    		<section class="preview-title">
-		    			
-					<h2>Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
+<main>
+      <section class="flex-container flex-container__2">  
+      <div class="flex-element"></div>    
+      </section>
 
-					<p>Расмотрим 5 причин, по которым седона круче , чем гранд каньон!</p>
+     <section class="flex-container flex-container__3">
+        <div class="flex-element">
+            <div class="flex-element-wrap">
+              <h2>СЕДОНА — небольшой городок в АРИЗОНЕ,<br> заслуживающий большего!</h2>
+              <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+            </div>
+        </div>
+    </section>
 
+    <section class="flex-container flex-container__4">
+        <div class="flex-element">
+          <h2>НАСТОЯЩИЙ<br>ГОРОДОК</h2>
+          <p>&#8212;№1&#8212;</p>
+          <p>СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ,<br> ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+        </div> 
+        <div class="flex-element">
+            <img src="img/fon-promo-shop.jpg" alt="shop" width="100%" height="auto"> 
+        </div> 
+      </section> 
 
-		    		</section>
-		    	<!-- строка 2 конец -->
-
-		    	<!-- строка 3 начало , это 1 преймущество -->
-					<section class="preview-city clearfix"> <!-- картинка какой то лавка с права будет сделана фоном на css со смещенной позицией  -->
-
-						<img src="img/fon-promo-shop.jpg" alt="shop" width="800" height="256"> 
-
-						<div class="text-preview-city">
-
-							<h2>Настроящий городок</h2>
-							<p>	№ 1 </p>  <!--  длинные тире можно сделать через :before/after { content:"\2014";}	в css-->
-							<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-
-						</div>
-					</section>
-		    	<!-- строка 3 конец -->
-
-		    	<!-- строка 4 начало , иконки ЖИЛЬЕ ЕДА СУВЕНИРЫ и мини описания -->
-		    		<section class="advantage clearfix"> 
-
-		    			<div class="icon-advantage"><!-- иконка будет задаватся фотоно для самого элемента-->
-
-							<h2>Жилье</h2>
-							<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-		    				
-		    			</div>
-
-		    			<div class="icon-advantage"><!-- иконка будет задаватся фотоно для самого элемента-->
-
-							<h2>Еда</h2>
-							<p>Всегда заказывайте фирменный бургер</p>
-
-		    			</div>
-
-		    			<div class="icon-advantage"><!-- иконка будет задаватся фотоно для самого элемента-->
-
-							<h2>Сувениры</h2>
-							<p>не только китайского , но и местного производства!</p>
-
-		    			</div>
-		    			
-		    		</section>
-		    	<!-- строка 4 конец -->
-
-				<!-- строка 5 начало ,это 2 преймущество -->
-					<section class="preview-canyon clearfix">
-						<!-- картинка каньона слева и текст справа   -->
-
-						<img src="img/fon-promo-canyon-devil.jpg" alt="canyon" width="800" height="324">
-
-						<div class="text-preview-canyon">
-
-							<h2>Там есть мост дьявола</h2>
-							<p>	№ 2 </p>  <!--  длинные тире можно сделать через :before/after { content:"\2014";}	в css-->
-							<p>Да, по нему можно пройти! если конечно вы осмелитесь</p>
-
-						</div>
-
-					</section>
-				<!-- строка 5 конец -->
-				
-				<!-- строка 6 начало ,это 3 , 4, 5 преймуществ-->
-					<section class="description clearfix">
-
-						<div class="text-description">
-
-							<h2>Небольшая площадь</h2>
-							<p>№3</p> <!--  длинные тире можно сделать через :before/after { content:"\2014";}	в css-->
-							<p>Все достопримечательности находятся очень близко</p>
-
-						</div>
-
-						<div class="text-description">
-
-							<h2>Красивая дорога</h2>
-							<p>№4</p> <!--  длинные тире можно сделать через :before/after { content:"\2014";}	в css-->
-							<p>Ехать в седону из лас-вегаса совсем не скучно!</p>		
-
-						</div>
-
-						<div class="text-description">
-
-							<h2>Мало туристов</h2>
-							<p>№5</p> <!--  длинные тире можно сделать через :before/after { content:"\2014";}	в css-->
-							<p>Большинство едет в град каньон и толпится там</p>
-
-						</div>
-
-					</section>
-				<!-- строка 6 конец -->
-
-				<!-- строка 7 начало секция с кнопкой поиска гостиницы и ее формой  -->
-					<section class="form-main">
-
-						<h2>Заинтересовались?</h2>
-						<p>Укажите предпочитаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиницы в седоне</p>
-
-						<div class="btn-form-main">
-							<a href="#" class="btnjs-form-main">Поиск гостиницы в седоне</a><!--открытие формы будет вызвано JS -->
-
-							<form action="#" hidden>
-
-								<label for="date-in">Дата заезда</label><!-- дата заеда -->
-								<input type="text" id="date-in" name="date-in" value="24 апреля 2017" >
-								<span  	class="icon-form-main"></span> 
-								<!-- в тех задании сказано что иконка календаря должна быть оформлена отдельным тегом  -->
+      <section class="flex-container flex-container__5">
+       <div class="flex-element ">
+             <h2>Жилье</h2>
+           <p>Рекомендуем пожить в настоящем<br>мотеле, все как в кино!</p>
+       </div> 
+         <div class="flex-element">
+             <h2>ЕДА</h2>
+           <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,<br>Вы НЕ разочаруетесь!</p>
+       </div> 
+          <div class="flex-element">
+             <h2>СУВЕНИРЫ</h2>
+           <p>Не только китайского, но и местного<br> производства!</p>
+       </div>    
+      </section> 
 
 
 
-								<label for="date-out">Дата выезда</label><!-- дата выезда -->
-								<input type="text" id="date-out" name="date-in" value="24 апреля 2017" >
-								<span class="icon-form-main"></span><!-- в тех задании сказано что иконка календаря должна быть оформлена отдельным тегом  -->
-
-								<label for="btn-number1">Взрослые</label><!-- Врослые счет  -->
-								<input type="button" value="-" class="btn-minus-form-main" onclick="" >
-							    <input type="text"  id="btn-number1" name="btn-form-main" value="0" class="btn-number1-form-main" >
-							    <input type="button" value="+" class="btn-plus-form-main" onclick="" >
-								
-
-								<label for="btn-number2">Дети</label><!-- Дети счет -->
-								<input type="button" value="-" class="btn-minus-form-main" onclick="" >
-							    <input type="text"  id="btn-number2" name="btn-form-main" value="0" class="btn-number1-form-main" >
-							    <input type="button" value="+" class="btn-plus-form-main" onclick="" >
+      <section class="flex-container flex-container__6">
+        <div class="flex-element">
+              <img src="img/fon-promo-canyon-devil.jpg" alt="shop" width="100%" height="auto"> 
+        </div> 
+        <div class="flex-element">
+              <h2>Там есть<br> мост дьявола</h2>
+              <p>&#8212;№2&#8212;</p>
+              <p>Да, по нему можно пройти! если конечно<br> вы осмелитесь</p>
+        </div> 
+      </section> 
 
 
-								<input type="submit" name="btn-icon-form-main" value="Найти" class="btn-icon-form-main"><!-- кнопка задействования формы -->
+        <div class="flex-container flex-container__7">
+       <div class="flex-element">
+            <h2>Небольшая<br>площадь</h2>
+            <p>&#8212;№3&#8212;</p>
+            <p>Все достопримечательности<br> находятся очень близко</p>
+       </div> 
+         <div class="flex-element">
+            <h2>Красивая<br>дорога</h2>
+            <p>&#8212;№4&#8212;</p> 
+            <p>Ехать в седону из лас-вегаса совсем<br> не скучно!</p>
+       </div> 
+          <div class="flex-element">
+            <h2>Мало<br>туристов</h2>
+            <p>&#8212;№5&#8212;</p> 
+            <p>Большинство едет в град каньон и<br> толпится там</p>
+       </div>    
+      </div> 
+
+        <div class="flex-container flex-container__8">
+           <div class="flex-element">
+                <h2>Заинтересовались?</h2>
+                <p>Укажите предпочитаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиницы в седоне</p>
+
+                <div class="form-search">
+                  <a href="#" class="btnjs">Поиск гостиницы в седоне</a>
+                  <form action="#" method="get" >
+
+                    <label for="date-in">Дата заезда:</label>
+                    <input type="text" id="date-in" name="date-in-text" value="24 апреля 2017" >
+                    <span   class="icon-date-in"></span> 
+
+                    <label for="date-out">Дата выезда:</label>
+                    <input type="text" id="date-out" name="date-out-text" value="24 апреля 2017" >
+                    <span class="icon-date-out"></span>
+
+                    <label for="age1-text">Взрослые:</label>
+                    <input type="button"  class="btn-minus-age1" >
+                    <input type="text"  id="age1-text" name="age1-text" value="0" class="age-text" >
+                    <input type="button" class="btn-plus-age1">
+                    
+
+                    <label for="age2-text">Дети:</label>
+                    <input type="button"  class="btn-minus-age2">
+                    <input type="text"  id="age2-text" name="age2-text" value="0" class="age-text" >
+                    <input type="button" class="btn-plus-age2">
+
+                    <input type="submit" name="btn-form" value="Найти" >
+
+                  </form>
+
+                </div>                
+           </div>
+        </div>
 
 
-							</form>
-						</div>
-						
-					</section>
-				<!-- строка 7 конец -->
 
-				<!-- строка 8 начало -->
-					<section class="map-main"> <!-- это блок для карты которая идет либо фоном либо можно добавить реальную карто на фон с зумом и т.д. допусти из google api -->	
-					</section>
-				<!-- строка 8 конец -->
-			</div>	
-	    </main><!-- -->
-	    <!-- конец главного контента -->
-	    <!-- -------------------- -->
-		<!-- начало подвала -->
-	    <footer class="content-footer ">
-	    	<div class="container clearfix">
-	    		<span class="info-footer">
-	    			#VISITSEDONA
-	    		</span>
+    <div class="flex-container flex-container__9">
+       <div class="flex-element"></div> 
+     </div> 
+    </main>
 
-	    		<section class="social-footer"> <!-- соц. сети -->
 
-		          <a class="social-btn-footer twitter-bnt-footer" href="#">Twitter</a>
-		          <a class="social-btn-footer facebook-bnt-footer" href="#">Facebook</a> <!--  иконки добавляются через спрайт-->
-		          <a class="social-btn-footer youtube-bnt-footer" href="#">YouTube</a>
+     <footer>
+       <div class="flex-container flex-container__10">
+          <div class="flex-element">
+               <a href="#">#VISITSEDONA</a>
+         </div> 
 
-		        </section>
+          <div class="flex-element">
+            <div class="social-footer">
+              <a class="social-btn-footer twitter-bnt-footer" href="#">Twitter</a>
+              <a class="social-btn-footer facebook-bnt-footer" href="#">Facebook</a>
+              <a class="social-btn-footer youtube-bnt-footer" href="#">YouTube</a>
+            </div>  
+          </div> 
+          <div class="flex-element">
 
-		        <section class="copyright-footer"> <!-- копирайтинг , сделано ссылкой >=< картинкой -->
+                  <p>WEBSITE BY</p>
 
-		          <a class="btn-footer" href="https://htmlacademy.ru"> 
-		          	<img src="img/logo-htmlacademy.png" width="194" height="40" alt="HTMLACADEMY.RU">
-		          </a>
+                  <a class="btn-footer-logo" href="https://htmlacademy.ru"></a>
+   
+           </div> 
+        </div> 
+     </footer>
+</div>
 
-		        </section><!-- центровщик -->
-		    </div>    
-	    </footer>
-		<!-- конец  подвала-->
+
+
+
+
+
+
+
+
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>	
   </body>
+
 </html>
