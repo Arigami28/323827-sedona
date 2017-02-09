@@ -97,7 +97,7 @@ a {
   background-color: white; }
   .promo h2 {
     font-size: 21px;
-    line-height: 26px;
+    line-height: 21px;
     font-weight: bold; }
   .promo p {
     font-size: 14px;
@@ -140,6 +140,7 @@ a {
   text-align: center;
   background-color: white; }
   .promo_title h2 {
+    width: 570px;
     padding-top: 9px;
     margin: 0;
     font-size: 21px;
@@ -169,10 +170,15 @@ a {
   background-color: #81b3d2;
   color: white; }
   .promo_items-long-imgr:nth-child(1) h2 {
-    padding-top: 38px;
-    padding-bottom: 6px; }
+    margin: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 57px;
+    padding-bottom: 8px; }
   .promo_items-long-imgr:nth-child(1) p {
-    padding-bottom: 6px; }
+    padding-bottom: 6px;
+    padding-left: 50px;
+    padding-right: 50px; }
 .promo_items-long-imgr:nth-child(2) {
   width: 800px;
   height: 256px; }
@@ -190,18 +196,20 @@ a {
   text-align: center;
   height: 330px; }
 
-.promo_advantages-items1 {
+.promo_advantages-with-icon-items {
   background-color: white;
   position: relative;
   width: 34.3%;
   height: inherit; }
-  .promo_advantages-items1 h2 {
+  .promo_advantages-with-icon-items h2 {
     margin: 0;
     padding-top: 160px; }
-  .promo_advantages-items1 p {
+  .promo_advantages-with-icon-items:nth-child(1) p {
     margin: 0;
-    padding-top: 25px; }
-  .promo_advantages-items1:nth-child(1) > :first-child::before {
+    padding-top: 25px;
+    padding-right: 55px;
+    padding-left: 55px; }
+  .promo_advantages-with-icon-items:nth-child(1) :first-child::before {
     content: "";
     background-image: url(../img/iconsprite.png);
     background-repeat: no-repeat;
@@ -212,7 +220,12 @@ a {
     display: block;
     width: 75px;
     height: 72px; }
-  .promo_advantages-items1:nth-child(2) > :first-child::before {
+  .promo_advantages-with-icon-items:nth-child(2) p {
+    margin: 0;
+    padding-top: 25px;
+    padding-right: 55px;
+    padding-left: 55px; }
+  .promo_advantages-with-icon-items:nth-child(2) :first-child::before {
     content: "";
     background-image: url(../img/iconsprite.png);
     background-repeat: no-repeat;
@@ -223,7 +236,12 @@ a {
     display: block;
     width: 74px;
     height: 70px; }
-  .promo_advantages-items1:nth-child(3) > :first-child::before {
+  .promo_advantages-with-icon-items:nth-child(3) p {
+    margin: 0;
+    padding-top: 25px;
+    padding-right: 55px;
+    padding-left: 55px; }
+  .promo_advantages-with-icon-items:nth-child(3) :first-child::before {
     content: "";
     background-image: url(../img/iconsprite.png);
     background-repeat: no-repeat;
@@ -256,10 +274,16 @@ a {
   background-color: #81b3d2;
   color: white; }
   .promo_items-long-imgl:nth-child(2) h2 {
-    padding-top: 38px;
-    padding-bottom: 6px; }
+    margin: 0;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 54px;
+    padding-bottom: 12px;
+    line-height: 21px; }
   .promo_items-long-imgl:nth-child(2) p {
-    padding-bottom: 6px; }
+    padding-bottom: 6px;
+    padding-left: 48px;
+    padding-right: 48px; }
 
 .promo_advantages-with-text {
   display: flex;
@@ -273,21 +297,42 @@ a {
   text-align: center;
   height: 256px; }
 
-.promo_advantages-items2 {
+.promo_advantages-with-text-items {
   width: 34.3%;
   height: inherit;
   background-color: #f2f2f2; }
-  .promo_advantages-items2 h2 {
+  .promo_advantages-with-text-items:nth-child(1) h2 {
     margin: 0;
     padding-top: 47px;
     padding-bottom: 25px;
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: bold; }
-  .promo_advantages-items2 p {
+    padding-left: 140px;
+    padding-right: 145px; }
+  .promo_advantages-with-text-items:nth-child(1) p {
     margin: 0;
-    font-size: 14px;
-    line-height: 21px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px; }
+  .promo_advantages-with-text-items:nth-child(2) h2 {
+    padding-left: 140px;
+    padding-right: 145px;
+    margin: 0;
+    padding-top: 47px;
+    padding-bottom: 25px; }
+  .promo_advantages-with-text-items:nth-child(2) p {
+    margin: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 20px; }
+  .promo_advantages-with-text-items:nth-child(3) h2 {
+    padding-left: 140px;
+    padding-right: 145px;
+    margin: 0;
+    padding-top: 47px;
+    padding-bottom: 25px; }
+  .promo_advantages-with-text-items:nth-child(3) p {
+    margin: 0;
+    padding-left: 60px;
+    padding-right: 60px;
     padding-bottom: 20px; }
 
 /* search hotels*/
@@ -311,7 +356,10 @@ a {
 .search-hotels_title p {
   margin: 0;
   font-size: 14px;
-  line-height: 24px; }
+  line-height: 24px;
+  padding-left: 370px;
+  padding-right: 370px;
+  text-align: center; }
 
 .search-hotels_dropdown-form {
   height: 85px;
@@ -651,7 +699,7 @@ a {
 .social-btn-footer:hover {
   background-color: #669ec0; }
 
-.twitter-btn-footer::before {
+.social-btn-footer--twitter::before {
   content: "";
   background-image: url(../img/iconsprite.png);
   background-repeat: no-repeat;
@@ -663,12 +711,12 @@ a {
   width: inherit;
   height: inherit; }
 
-.twitter-btn-footer:active::before {
+.social-btn-footer--twitter:active::before {
   background-image: url(../img/iconsprite.png);
   background-repeat: no-repeat;
   background-position: -18px -356px; }
 
-.facebook-btn-footer::before {
+.social-btn-footer--facebook::before {
   content: "";
   background-image: url(../img/iconsprite.png);
   background-repeat: no-repeat;
@@ -680,12 +728,12 @@ a {
   width: inherit;
   height: inherit; }
 
-.facebook-btn-footer:active::before {
+.social-btn-footer--facebook:active::before {
   background-image: url(../img/iconsprite.png);
   background-repeat: no-repeat;
   background-position: -170px -252px; }
 
-.youtube-btn-footer::before {
+.social-btn-footer--youtube::before {
   content: "";
   background-image: url(../img/iconsprite.png);
   background-repeat: no-repeat;
@@ -697,7 +745,7 @@ a {
   width: inherit;
   height: inherit; }
 
-.youtube-btn-footer:active::before {
+.social-btn-footer--youtube:active::before {
   background-image: url(../img/iconsprite.png);
   background-repeat: no-repeat;
   background-position: -368px -356px; }
