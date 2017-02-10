@@ -453,14 +453,14 @@ height: 330px;
         line-height: 24px; 
         font-weight: bold;
         padding-top: 55px;
+
         padding-bottom: 30px;
         }
     p   {
-        margin:0;               
+
+        margin: 0px;    
         font-size: 14px;
         line-height: 24px; 
-        padding-left: 370px;
-        padding-right: 370px;
         text-align: center;
         }     
     }
@@ -847,9 +847,7 @@ width: 44px;
 margin-right: 4px;
 background-color: #81b3d2;
 }
-.social-footer{
 
-    }
 .social-btn-footer:hover {
     background-color: #669ec0;
 }                                                                           
@@ -933,18 +931,30 @@ background-color: #81b3d2;
                background-position: -30px -129px;
 }
 
+/* hotels.html*/
+.hotels {
+
+    padding:0 0px;
+    margin: 0;
+    background-color:#f2f2f2;
+    min-height: 56px;
+    background-color: white; 
+    h2{
+        font-size:21px;
+        line-height: 21px;
+        font-weight: bold; 
+        }
+    p {
+        font-size:14px;
+        line-height: 21px; 
+        }
 
 
- 
-/* class index.html*/
+}
 
 
 
 /* Servise*/
-.flex-element {
-
- 
-}
 .clearfix::after {
   content: "";
   display: table;
