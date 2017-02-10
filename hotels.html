@@ -37,88 +37,134 @@
 
 	<main class="hotels">
 
-	<section class="hotels_filters">
+		<section class="hotels_filters">
 
-		<form action="#" method="post" class="hotels_filters_form ">
+			<form action="#" method="post" class="hotels_filters_form ">
 
-			<fieldset class="hotels_filters-infrastructure clearfix"> <!-- фильт инфраструктуры  -->
+				<fieldset class="hotels_filters-infrastructure clearfix"> <!-- фильт инфраструктуры  -->
 
-				<legend>Инфраструктура:</legend>
+					<legend>Инфраструктура:</legend>
 
-		   		<label for="infrastructure-pool">
-			   		<input id="infrastructure-pool" type="checkbox" name="infrastructure-pool" checked >
-			   		<span class="checkbox-indicator"></span>
-			   		Бассейн
-		   		</label>
-				
-				<label for="infrastructure-parking">
-				   	<input id="infrastructure-parking" type="checkbox" name="infrastructure-parking" >
-					<span class="checkbox-indicator"></span>
-				   	Парковка
-			   	</label>
+			   		<label for="infrastructure-pool">
+				   		<input id="infrastructure-pool" type="checkbox" name="infrastructure-pool" checked >
+				   		<span class="checkbox-indicator"></span>
+				   		Бассейн
+			   		</label>
+					
+					<label for="infrastructure-parking">
+					   	<input id="infrastructure-parking" type="checkbox" name="infrastructure-parking" >
+						<span class="checkbox-indicator"></span>
+					   	Парковка
+				   	</label>
 
-			   	<label for="infrastructure-wifi">
-				   	<input id="infrastructure-wifi" type="checkbox" name="infrastructure-wifi" >
-					<span class="checkbox-indicator"></span>				   	
-				   	Wi-fi
-			   	</label>
+				   	<label for="infrastructure-wifi">
+					   	<input id="infrastructure-wifi" type="checkbox" name="infrastructure-wifi" >
+						<span class="checkbox-indicator"></span>				   	
+					   	Wi-fi
+				   	</label>
 
-			</fieldset>	
+				</fieldset>	
 
-			<fieldset class="hotels_filters-type clearfix"> <!-- фильтр жилья  -->
+				<fieldset class="hotels_filters-type clearfix"> <!-- фильтр жилья  -->
 
-				<legend>Тип жилья:</legend>
+					<legend>Тип жилья:</legend>
 
-		   		<label for="type-hotels">
-			   		<input id="type-hotels" type="checkbox" name="type-hotels" checked >
-			   		<span class="checkbox-indicator"></span>
-			   		Гостиница
-		   		</label>
+			   		<label for="type-hotels">
+				   		<input id="type-hotels" type="checkbox" name="type-hotels" checked >
+				   		<span class="checkbox-indicator"></span>
+				   		Гостиница
+			   		</label>
 
-			   	<label for="type-motel">
-				   	<input id="type-motel" type="checkbox" name="type-motel" checked>
-				   	<span class="checkbox-indicator"></span>
-				   	Мотель
-			   	</label>
-				
-				<label for="type-apartments">
-				   	<input id="type-apartments" type="checkbox" name="type-apartments" checked >
-				   	<span class="checkbox-indicator"></span>
-				   	АПАРТАМЕНТЫ
-			   	</label>
+				   	<label for="type-motel">
+					   	<input id="type-motel" type="checkbox" name="type-motel" checked>
+					   	<span class="checkbox-indicator"></span>
+					   	Мотель
+				   	</label>
+					
+					<label for="type-apartments">
+					   	<input id="type-apartments" type="checkbox" name="type-apartments" checked >
+					   	<span class="checkbox-indicator"></span>
+					   	АПАРТАМЕНТЫ
+				   	</label>
 
-			</fieldset>	
+				</fieldset>	
 
-			<div class="hotels_filters-price">
-				<div class="hotels_filters-price-title">Стоимость в сутки (Р): </div>
+				<div class="hotels_filters-price">
+					<div class="hotels_filters-price-title">Стоимость в сутки (Р): </div>
 
-				<div class="hotels_filters-price-controls">
-					<label class="hotels_filters-price-min-price">от <input type="text" name="min-price" id="min-price" value="0"></label>
-					<label class="hotels_filters-price-max-price">до <input type="text" name="max-price" id="max-price" value="3000"></label>
-				</div>
-
-				<div class="hotels_filters-price-range">
-					<div class="hotels_filters-price-range-scale">
-						<div class="hotels_filters-price-range-bar"></div>
+					<div class="hotels_filters-price-controls">
+						<label class="hotels_filters-price-min-price">от <input type="text" name="min-price" id="min-price" value="0"></label>
+						<label class="hotels_filters-price-max-price">до <input type="text" name="max-price" id="max-price" value="3000"></label>
 					</div>
-					<div class="hotels_filters-price-range-toggle hotels_filters-price-range-toggle-min"></div>
-					<div class="hotels_filters-price-range-toggle hotels_filters-price-range-toggle-max"></div>
-				</div>
 
-				<button class="hotels_filters-price-btn" type="submit" >Показать</button>
-				
-			</div>		
+					<div class="hotels_filters-price-range">
+						<div class="hotels_filters-price-range-scale">
+							<div class="hotels_filters-price-range-bar"></div>
+						</div>
+						<div class="hotels_filters-price-range-toggle hotels_filters-price-range-toggle-min"></div>
+						<div class="hotels_filters-price-range-toggle hotels_filters-price-range-toggle-max"></div>
+					</div>
 
-		</form>
+					<button class="hotels_filters-price-btn" type="submit" >Показать</button>
+					
+				</div>		
+
+			</form>
+			
+		</section>
+			
+		<section class="hotels_tegfilter">
+
+			<ul class="hotels_tegfilter-links">
+				<li>
+					<h2>Найдено: 3</h2>
+				</li>
+				<li>
+					Сортировка:
+				</li>
+
+				<li>
+					<a href="#" class="hotels_tegfilter-links-blue">По цене</a>
+				</li>
+
+				<li>
+					<a href="#" class="hotels_tegfilter-links-dashed">По типу</a>
+				</li>
+
+				<li>
+					<a href="#" class="hotels_tegfilter-links-dashed">По рейтингу</a>
+				</li>
+			</ul>
 		
-	</section>
-		
-	<section class="hotels_tegfilter">
-		
-	</section>
+			<div class="arrow clearfix">
+				<a href="#"><div class="hotels_tegfilter-links-arrowup"></div></a>
+
+				<a href="#"><div class="hotels_tegfilter-links-arrowdown"></div></a>
+			</div>
+			
+		</section>
 
 	<section class="hotels_filters-result hotels_filters-result--amara">
-		
+			 <!-- картинка превью отеля -->
+		<img src="http://placehold.it/135x90" alt="Hotels" width="135" height="90">
+		<div class="text-result-hotels">
+			<h2>Amara resort &#38; SPA</h2>			
+			<div class="cost-result-hotels">
+				<p>Гостиница от 4000 Р.</p>
+			</div>
+
+			<a href="#" class="btn-result-hotels">Подробнее</a> <!-- кнопка -->
+
+			<a href="#" class="btn-result-hotels">Забронировать</a> <!-- кнопка -->
+		</div>
+
+		<div class="rating-result-hotels">
+			
+			<div class="star-rating-result-hotels"></div> 
+			<p class="text-rating-result-hotels">
+				Рейтинг:8,5
+			</p>
+		</div>
 	</section>
 
 
@@ -131,32 +177,23 @@
 	</section>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	</main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
        <footer class="navigaion-footer">
 
           <div class="navigaion-footer_item">
