@@ -776,7 +776,6 @@ a {
 .hotels {
   padding: 0 0px;
   margin: 0;
-  background-color: #f2f2f2;
   min-height: 56px;
   background-color: white; }
   .hotels h2 {
@@ -786,6 +785,203 @@ a {
   .hotels p {
     font-size: 14px;
     line-height: 21px; }
+
+.hotels_filters {
+  min-height: 217px;
+  background-image: url(../img/hotel/fon-promo-top-hotel.jpg);
+  background-repeat: no-repeat;
+  background-position: 45% 50%;
+  color: white;
+  position: relative; }
+  .hotels_filters legend {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 21px;
+    padding: 0;
+    margin: 0; }
+  .hotels_filters input[type="checkbox"] {
+    display: none; }
+  .hotels_filters label[for="type-hotels"],
+  .hotels_filters label[for="type-motel"],
+  .hotels_filters label[for="type-apartments"],
+  .hotels_filters label[for="infrastructure-pool"],
+  .hotels_filters label[for="infrastructure-parking"],
+  .hotels_filters label[for="infrastructure-wifi"] {
+    float: left;
+    margin-top: 24px;
+    padding-left: 40px;
+    position: relative;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase; }
+  .hotels_filters input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    background-image: url(../img/iconsprite.png);
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    left: 0;
+    background-position: -164px -182px; }
+  .hotels_filters input[type="checkbox"]:checked + .checkbox-indicator {
+    width: 26px;
+    height: 22px;
+    background-position: -328px -182px; }
+
+.hotels_filters_form {
+  min-height: inherit;
+  padding: 0; }
+
+.hotels_filters-infrastructure {
+  display: block;
+  position: absolute;
+  top: 13%;
+  left: 6%;
+  padding: 0;
+  border: 0;
+  width: 100px; }
+
+.hotels_filters-type {
+  display: block;
+  position: absolute;
+  top: 13%;
+  left: 27%;
+  padding: 0;
+  border: 0;
+  width: 140px; }
+
+.hotels_filters-price {
+  display: block;
+  position: absolute;
+  top: 13%;
+  right: 6%;
+  width: 318px;
+  height: auto;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
+  text-transform: uppercase; }
+
+.hotels_filters-price-title {
+  margin-bottom: 9px;
+  margin-left: -11px; }
+
+.hotels_filters-price-controls {
+  position: relative;
+  height: 34px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  font-size: 0; }
+
+.hotels_filters-price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 22px;
+  background: #ffffff; }
+
+.hotels_filters-price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 35px;
+  vertical-align: top;
+  cursor: pointer;
+  font-weight: normal; }
+
+.hotels_filters-price-min-price,
+.hotels_filters-price-max-price {
+  width: 90px;
+  padding-left: 65px; }
+
+.hotels_filters-price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  outline: none;
+  background: none;
+  border: none; }
+
+.hotels_filters-price-range {
+  position: relative;
+  margin-bottom: 32px; }
+
+.hotels_filters-price-range-scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3); }
+
+.hotels_filters-price-range-bar {
+  width: 80%;
+  height: inherit;
+  background: #ffffff; }
+
+.hotels_filters-price-range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer; }
+
+.hotels_filters-price-range-toggle-min {
+  left: 0; }
+
+.hotels_filters-price-range-toggle-max {
+  left: 80%; }
+
+.hotels_filters-price-range-toggle:hover {
+  background: #1c4f80; }
+
+.hotels_filters-price-btn {
+  display: block;
+  margin: 0 85px;
+  padding: 6px 30px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer; }
+
+.hotels_filters-price-btn:hover {
+  color: #000000;
+  background: #ffffff; }
+
+.hotels_tegfilter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  min-height: 86px;
+  background-color: pink; }
+
+.hotels_filters-result {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  min-height: 151px; }
+
+.hotels_filters-result--amara {
+  background-color: #CD5C5C; }
+
+.hotels_filters-result--desert {
+  background-color: #00FA9A; }
+
+.hotels_filters-result--villas {
+  background-color: yellow; }
 
 /* Servise*/
 .clearfix::after {

@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
@@ -31,80 +32,103 @@
 
 		  </nav>
 
+
+
+
 	<main class="hotels">
-		<section class="filter-hotels clearfix"> 
-			
-			<form action="#">
 
-				<fieldset class="infrastructure-filter-holes"> <!-- фильт инфраструктуры  -->
+	<section class="hotels_filters">
 
-					<legend>Инфраструктура:</legend>
+		<form action="#" method="post" class="hotels_filters_form ">
 
+			<fieldset class="hotels_filters-infrastructure clearfix"> <!-- фильт инфраструктуры  -->
 
-							   	<!-- input прячется и привязывается к label после чего декорируется label иконки 
-						    		состояния добавляются с помощью ::befor/after  -->
-							   		<input id="infrastructure-hotels" type="checkbox" name="infrastructure-hotels" checked hidden>
-							   		<label for="infrastructure-hotels">Бассейны</label>
+				<legend>Инфраструктура:</legend>
 
-								   	<input id="parking-hotels" type="checkbox" name="parking-hotels"  hidden>
-								   	<label for="parking-hotels">Парковка</label>
+		   		<label for="infrastructure-pool">
+			   		<input id="infrastructure-pool" type="checkbox" name="infrastructure-pool" checked >
+			   		<span class="checkbox-indicator"></span>
+			   		Бассейн
+		   		</label>
+				
+				<label for="infrastructure-parking">
+				   	<input id="infrastructure-parking" type="checkbox" name="infrastructure-parking" >
+					<span class="checkbox-indicator"></span>
+				   	Парковка
+			   	</label>
 
-								   	<input id="wifi-hotels" type="checkbox" name="wifi-hotels"  hidden>
-								   	<label for="wifi-hotels">Wi-fi</label>
+			   	<label for="infrastructure-wifi">
+				   	<input id="infrastructure-wifi" type="checkbox" name="infrastructure-wifi" >
+					<span class="checkbox-indicator"></span>				   	
+				   	Wi-fi
+			   	</label>
 
-				</fieldset>
+			</fieldset>	
 
+			<fieldset class="hotels_filters-type clearfix"> <!-- фильтр жилья  -->
 
-				<fieldset class="type-filter-holes"> <!-- фильтр жилья  -->
+				<legend>Тип жилья:</legend>
 
-					<legend>Тип жилья:</legend>
+		   		<label for="type-hotels">
+			   		<input id="type-hotels" type="checkbox" name="type-hotels" checked >
+			   		<span class="checkbox-indicator"></span>
+			   		Гостиница
+		   		</label>
 
+			   	<label for="type-motel">
+				   	<input id="type-motel" type="checkbox" name="type-motel" checked>
+				   	<span class="checkbox-indicator"></span>
+				   	Мотель
+			   	</label>
+				
+				<label for="type-apartments">
+				   	<input id="type-apartments" type="checkbox" name="type-apartments" checked >
+				   	<span class="checkbox-indicator"></span>
+				   	АПАРТАМЕНТЫ
+			   	</label>
 
-							   	<!-- input прячется и привязывается к label после чего декорируется label иконки 
-						    		состояния добавляются с помощью ::befor  -->
-							   		<input id="holet-hotels" type="checkbox" name="holet-hotels" checked hidden>
-							   		<label for="holet-hotels">Гостиница</label>
+			</fieldset>	
 
-								   	<input id="motel-hotels" type="checkbox" name="motel-hotels" checked hidden>
-								   	<label for="motel-hotels">Мотель</label>
+			<div class="hotels_filters-price">
+				<div class="hotels_filters-price-title">Стоимость в сутки (Р): </div>
 
-								   	<input id="Apartments-hotels" type="checkbox" name="Apartments-hotels" checked hidden>
-								   	<label for="Apartments-hotels">Аппартаменты</label>
+				<div class="hotels_filters-price-controls">
+					<label class="hotels_filters-price-min-price">от <input type="text" name="min-price" id="min-price" value="0"></label>
+					<label class="hotels_filters-price-max-price">до <input type="text" name="max-price" id="max-price" value="3000"></label>
+				</div>
 
+				<div class="hotels_filters-price-range">
+					<div class="hotels_filters-price-range-scale">
+						<div class="hotels_filters-price-range-bar"></div>
+					</div>
+					<div class="hotels_filters-price-range-toggle hotels_filters-price-range-toggle-min"></div>
+					<div class="hotels_filters-price-range-toggle hotels_filters-price-range-toggle-max"></div>
+				</div>
 
-				</fieldset>
+				<button class="hotels_filters-price-btn" type="submit" >Показать</button>
+				
+			</div>		
 
-				<fieldset class="price-filter-hotels"> <!-- фильтр стоимости  -->
-
-					<legend>Стоимость в сутки(Р):</legend>
-					
-						<div class="numbers-price-filter-hotels">
-							<p>
-								от 0
-							</p>
-
-							<p>
-								до 3000
-							</p>
-						</div>
-
-						<input type="range" min="0" max="3000" step="20" value="0" /><!--  фильтр цены  чертой с ползунком в дальнейшем можно прикрутить вывод через output-->
-
-						<input type="submit" name="show-btn" id="show-btn" value="Показать" class="btn-price-filter-hotels-main"> <!-- кнопка активация фильтра -->
-
-				</fieldset>
-
-			</form>
-			
-		</section>		
-
-	<section>
+		</form>
 		
 	</section>
 		
+	<section class="hotels_tegfilter">
+		
+	</section>
+
+	<section class="hotels_filters-result hotels_filters-result--amara">
+		
+	</section>
 
 
+	<section class="hotels_filters-result hotels_filters-result--desert">
+		
+	</section>
 
+	<section class="hotels_filters-result hotels_filters-result--villas">
+		
+	</section>
 
 
 	</main>
