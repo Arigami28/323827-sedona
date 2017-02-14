@@ -181,8 +181,11 @@ a {
     padding-left: 50px;
     padding-right: 50px; }
 .promo_items-long-imgr:nth-child(2) {
-  width: 800px;
+  min-width: 800px;
   height: 256px; }
+  .promo_items-long-imgr:nth-child(2) img {
+    width: 100%;
+    height: auto; }
 
 .promo_advantages-with-icon {
   display: flex;
@@ -267,8 +270,11 @@ a {
   text-align: center; }
 
 .promo_items-long-imgl:nth-child(1) {
-  width: 800px;
+  min-width: 800px;
   height: 256px; }
+  .promo_items-long-imgl:nth-child(1) img {
+    width: 100%;
+    height: auto; }
 .promo_items-long-imgl:nth-child(2) {
   height: 256px;
   width: 400px;
@@ -393,6 +399,7 @@ a {
   width: 568px;
   height: 396px;
   z-index: 5;
+  display: none;
   position: relative;
   background-color: #ffffff;
   color: black;
@@ -641,6 +648,10 @@ a {
 
 .search-hotels_icon-date-out:active {
   background-position: -245px -100px; }
+
+.search-hotels_form-search-on {
+  display: block;
+  animation: slideInDown 0.6s; }
 
 .promo_img-map {
   display: flex;
@@ -1196,5 +1207,17 @@ a {
   content: "";
   display: table;
   clear: both; }
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown; }
 
 /*# sourceMappingURL=style.css.map */

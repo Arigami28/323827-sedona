@@ -58,7 +58,7 @@
         </div> 
 
         <div class="promo_items-long-imgr">
-            <img src="img/fon-promo-shop.jpg" alt="shop" width="100%" height="auto"> 
+            <img src="img/fon-promo-shop.jpg" alt="shop" width="800" height="256"> 
         </div> 
 
       </section> 
@@ -81,7 +81,7 @@
       </section> 
       <section class="promo_long-imgl">
         <div class="promo_items-long-imgl">
-              <img src="img/fon-promo-canyon-devil.jpg" alt="shop" width="100%" height="auto"> 
+              <img src="img/fon-promo-canyon-devil.jpg" alt="shop" width="800" height="256"> 
         </div> 
         <div class="promo_items-long-imgl">
               <h2>Там есть&nbsp;&nbsp; мост дьявола</h2>
@@ -115,26 +115,26 @@
           </div>
           <div class="search-hotels_dropdown-form">
             <a href="#" class="search-hotels_btn">Поиск гостиницы в седоне</a>
-              <form action="#" method="get" class="search-hotels_form-search" >
+              <form action="#" method="get" class="search-hotels_form-search " >
 
                 <label for="search-hotels_date-in">Дата заезда:</label>
-                <input type="text" id="search-hotels_date-in" name="search-hotels_date-in-text" value="24 апреля 2017" >
+                <input type="text" id="search-hotels_date-in" name="search-hotels_date-in-text" value="24 апреля 2017" required>
                 <span   class="search-hotels_icon-date-in"></span> 
 
                 <label for="search-hotels_date-out">Дата выезда:</label>
-                <input type="text" id="search-hotels_date-out" name="search-hotels_date-out-text" value="24 апреля 2017" >
+                <input type="text" id="search-hotels_date-out" name="search-hotels_date-out-text" value="24 апреля 2017" required>
                 <span class="search-hotels_icon-date-out"></span>
 
                 <label for="search-hotels_adults-text">Взрослые:</label>
-                <input type="button"  class="search-hotels_adults-btn-minus">
-                <input type="text"  id="search-hotels_adults-text" name="age1-text" value="0" class="age-text" >
-                <input type="button" class="search-hotels_adults-btn-plus">
+                <input type="button"  class="search-hotels_adults-btn-minus" value=" ">
+                <input type="text"  id="search-hotels_adults-text" name="age1-text" value="0" class="age-text" required>
+                <input type="button" class="search-hotels_adults-btn-plus" value=" ">
                 
 
                 <label for="search-hotels_children-text">Дети:</label>
-                <input type="button"  class="search-hotels_children-btn-minus" >
-                <input type="text"  id="search-hotels_children-text" name="search-hotels_children-text" value="0" class="search-hotels_children-text" >
-                <input type="button" class="search-hotels_children-btn-plus" >
+                <input type="button"  class="search-hotels_children-btn-minus" value=" ">
+                <input type="text"  id="search-hotels_children-text" name="search-hotels_children-text" value="0" class="search-hotels_children-text" required >
+                <input type="button" class="search-hotels_children-btn-plus" value=" ">
 
                 <input type="submit" name="btn-form" value="Найти">
 
@@ -170,6 +170,6 @@
 
 
 </div>
-		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>	
+<script src="js/prod.js"></script>
   </body>
 </html>
