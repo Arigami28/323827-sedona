@@ -1,5 +1,6 @@
       var form = document.querySelector(".search-hotels_form-search");
       var btn = document.querySelector(".search-hotels_btn");
+     	form.classList.add("search-hotels_form-search-off");
       btn.addEventListener("click", function(event) {
         event.preventDefault();
         form.classList.add("search-hotels_form-search-on");

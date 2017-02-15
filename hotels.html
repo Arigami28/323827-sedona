@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.mini.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -39,7 +39,7 @@
 
 		<section class="hotels_filters">
 
-			<form action="#" method="post" class="hotels_filters_form ">
+			<form action=”form-filter.php” method="post" class="hotels_filters_form ">
 
 				<fieldset class="hotels_filters-infrastructure clearfix"> <!-- фильт инфраструктуры  -->
 
@@ -85,8 +85,8 @@
 					<div class="hotels_filters-price-title">Стоимость в сутки (Р): </div>
 
 					<div class="hotels_filters-price-controls">
-						<label class="hotels_filters-price-min-price">от <input type="text" name="min-price" id="min-price" value="0" ></label>
-						<label class="hotels_filters-price-max-price">до <input type="text" name="max-price" id="max-price" value="3000"></label>
+						<label class="hotels_filters-price-min-price" for="min-price">от <input type="text" name="min-price" id="min-price" value="0" ></label>
+						<label class="hotels_filters-price-max-price" for="max-price">до <input type="text" name="max-price" id="max-price" value="3000"></label>
 					</div>
 
 					<div class="hotels_filters-price-range">
@@ -194,6 +194,6 @@
         </footer> 
 
 	</div>
-		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>		
+<script src="js/production.min.js"></script>		
   </body>
 </html>
