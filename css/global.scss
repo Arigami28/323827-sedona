@@ -824,13 +824,15 @@ height: 330px;
     position: relative;
     z-index: 10;  
     padding:0 0px;
-    background-color:#f2f2f2;
     min-height: 56px;
     flex-direction: row;
     justify-content: center; 
     flex-wrap: nowrap; 
     background:rgba(255,255,255, 0.9); 
-  } 
+  }
+.navigation-no-opacty {
+        background:white; 
+}
 .navigaion-footer_item {
     width:33.3%;         
     height: 120px;
@@ -1120,6 +1122,7 @@ background-color: #81b3d2;
 .hotels_filters-price-max-price {
     width: 90px;
     padding-left: 65px;
+    line-height: 30px;
 }
 .hotels_filters-price-controls input {
     width: 50px;
@@ -1433,7 +1436,11 @@ background-color: #81b3d2;
 
 }
 
+input[id="search-hotels_adults-text"]:focus,
+input[id="search-hotels_children-text"]:focus {
+    outline: none;
 
+}
 
 /* Servise*/
 .clearfix::after {
