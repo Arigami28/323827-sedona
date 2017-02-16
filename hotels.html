@@ -10,8 +10,7 @@
   <body>
 	<div class="wrapper-page">
 		<nav class="navigaion-header">
-
-		     <ul class="navigaion-header_list">
+		    <ul class="navigaion-header_list">
 		        <li class="navigaion-header_list-item"> 
 		          <a href="#" class="navigaion-header_btn">Информация</a>
 		        </li>
@@ -25,70 +24,37 @@
 		          <a href="#" class="navigaion-header_btn-active navigaion-header_btn">Гостиницы</a>
 		        </li>
 		    </ul>
-
 		    <div class="navigaion-header_logo">   
 		        <a href="index.html"><img src="img/logo.png" alt="Citi of Sedona" width="138" height="69"> </a>
 		    </div> 
-
 		  </nav>
-
-
-
-
 	<main class="hotels">
-
 		<section class="hotels_filters">
-
 			<form action=”form-filter.php” method="post" class="hotels_filters_form ">
-
 				<fieldset class="hotels_filters-infrastructure clearfix"> <!-- фильт инфраструктуры  -->
-
 					<legend>Инфраструктура:</legend>
-
-			   		
 				   	<input id="infrastructure-pool" type="checkbox" name="infrastructure-pool" checked >
 				   	<label for="infrastructure-pool">Бассейн</label>
-			   		
-					
-					
 					<input id="infrastructure-parking" type="checkbox" name="infrastructure-parking" >
-					<label for="infrastructure-parking">Парковка</label>
-				   	
-
-				   	
+					<label for="infrastructure-parking">Парковка</label> 				   	
 					<input id="infrastructure-wifi" type="checkbox" name="infrastructure-wifi" >
 					<label for="infrastructure-wifi">Wi-fi</label>
-
 				</fieldset>	
-
 				<fieldset class="hotels_filters-type clearfix"> <!-- фильтр жилья  -->
-
 					<legend>Тип жилья:</legend>
-
-			   		
 				   	<input id="type-hotels" type="checkbox" name="type-hotels" checked >
-				   	<label for="type-hotels">Гостиница</label>
-
-				   	
+				   	<label for="type-hotels">Гостиница</label>				   	
 					<input id="type-motel" type="checkbox" name="type-motel" checked>
-					<label for="type-motel">Мотель</label>
-
-					
-					
+					<label for="type-motel">Мотель</label>					
 					<input id="type-apartments" type="checkbox" name="type-apartments" checked >
 					<label for="type-apartments">АПАРТАМЕНТЫ</label>
-				   	
-
 				</fieldset>	
-
 				<div class="hotels_filters-price">
 					<div class="hotels_filters-price-title">Стоимость в сутки (Р): </div>
-
 					<div class="hotels_filters-price-controls">
 						<label class="hotels_filters-price-min-price" for="min-price">от <input type="text" name="min-price" id="min-price" value="0" ></label>
 						<label class="hotels_filters-price-max-price" for="max-price">до <input type="text" name="max-price" id="max-price" value="3000"></label>
 					</div>
-
 					<div class="hotels_filters-price-range">
 						<div class="hotels_filters-price-range-scale">
 							<div class="hotels_filters-price-range-bar"></div>
@@ -96,17 +62,11 @@
 						<div class="hotels_filters-price-range-toggle hotels_filters-price-range-toggle-min"></div>
 						<div class="hotels_filters-price-range-toggle hotels_filters-price-range-toggle-max"></div>
 					</div>
-
-					<button class="hotels_filters-price-btn" type="submit" >Показать</button>
-					
+					<button class="hotels_filters-price-btn" type="submit" >Показать</button>		
 				</div>		
-
-			</form>
-			
-		</section>
-			
+			</form>			
+		</section>	
 		<section class="hotels_tegfilter">
-
 			<ul class="hotels_tegfilter-links">
 				<li>
 					<h2>Найдено: 3</h2>
@@ -114,27 +74,21 @@
 				<li>
 					Сортировка:
 				</li>
-
 				<li>
 					<a href="#" class="hotels_tegfilter-links-blue">По цене</a>
 				</li>
-
 				<li>
 					<a href="#" class="hotels_tegfilter-links-dashed">По типу</a>
 				</li>
-
 				<li>
 					<a href="#" class="hotels_tegfilter-links-dashed">По рейтингу</a>
 				</li>
-			</ul>
-		
+			</ul>		
 			<div class="arrow">
 				<div class="arrowup"></div>
 				<div class="arrowdown"></div>
-			</div>
-			
+			</div>			
 		</section>
-
 	<section class="hotels_filters-result">
 		<img src="img/hotel/prew-amararesort.jpg" alt="Hotels" width="135" height="90">
 		<div class="hotels_filters-result-text clearfix">
@@ -147,8 +101,6 @@
 		<div class="hotels_filters-rating-star four-stars"></div> 
 		<a href="#" class="hotels_filters-rating-text">Рейтинг: 8,5</a>
 	</section>
-
-
 	<section class="hotels_filters-result">
 		<img src="img/hotel/prew-desertquail.jpg" alt="Hotels" width="135" height="90">
 		<div class="hotels_filters-result-text">
@@ -161,7 +113,6 @@
 		<div class="hotels_filters-rating-star tree-stars"></div> 
 		<a href="#" class="hotels_filters-rating-text">Рейтинг: 8,9</a>		
 	</section>
-
 	<section class="hotels_filters-result">
 		<img src="img/hotel/prew-villastapoco.jpg" alt="Hotels" width="135" height="90">
 		<div class="hotels_filters-result-text">
@@ -175,24 +126,20 @@
 		<a href="#" class="hotels_filters-rating-text">Рейтинг: 9,2</a>		
 	</section>
 	</main>
-       <footer class="navigation-no-opacty navigaion-footer ">
-
-          <div class="navigaion-footer_item">
-               <a href="#" class="navigaion-footer_heshteg-link">#VISITSEDONA</a>
-         </div> 
-
-          <div class="navigaion-footer_item">
-              <a class="social-btn-footer social-btn-footer--twitter" href="#">Twitter</a>
-              <a class="social-btn-footer social-btn-footer--facebook" href="#">Facebook</a>
-              <a class="social-btn-footer social-btn-footer--youtube" href="#">YouTube</a>
-          </div> 
-
-          <div class="navigaion-footer_item">
-                  <p class="text-footer-logo">WEBSITE BY</p>
-                  <a class="img-footer-logo" href="https://htmlacademy.ru"></a>  
-           </div> 
-        </footer> 
-
+   <footer class="navigation-no-opacty navigaion-footer ">
+      <div class="navigaion-footer_item">
+          <a href="#" class="navigaion-footer_heshteg-link">#VISITSEDONA</a>
+     </div> 
+      <div class="navigaion-footer_item">
+          <a class="social-btn-footer social-btn-footer--twitter" href="#">Twitter</a>
+          <a class="social-btn-footer social-btn-footer--facebook" href="#">Facebook</a>
+          <a class="social-btn-footer social-btn-footer--youtube" href="#">YouTube</a>
+      </div> 
+      <div class="navigaion-footer_item">
+          <p class="text-footer-logo">WEBSITE BY</p>
+          <a class="img-footer-logo" href="https://htmlacademy.ru"></a>  
+       </div> 
+    </footer> 
 	</div>
 <script src="js/production.min.js"></script>		
   </body>
