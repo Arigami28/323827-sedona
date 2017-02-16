@@ -1363,3 +1363,6 @@ input[id="search-hotels_children-text"]:focus {
 .slideInDown {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown; }
+.promo_img-map iframe {
+  border: 0;
+}
