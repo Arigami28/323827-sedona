@@ -716,9 +716,10 @@ a {
 .search-hotels_icon-date-out:active {
   background-position: -245px -100px; }
 .search-hotels_form-search-off {
-  display: none;   }
+  visibility: hidden;
+  opacity: 0;
+  transition:visibility 0s linear 0.5s,opacity 0.5s linear}
 .search-hotels_form-search-on {
-  display: block;
   -webkit-animation: slideInDown 0.6s;
   animation: slideInDown 0.6s; }
 .promo_img-map {
@@ -1253,18 +1254,22 @@ input[id="search-hotels_children-text"]:focus {
   from {
     -webkit-transform: translate3d(0, -100px, 100px);
     transform: translate3d(0, -100px, 100px);
-    visibility: visible; }
+    visibility: visible;
+    opacity: 0; }
   to {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
 @keyframes slideInDown {
   from {
     -webkit-transform: translate3d(0, -100px, 100px);
     transform: translate3d(0, -100px, 100px);
-    visibility: visible; }
+    visibility: visible;
+    opacity: 0; }
   to {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
 .slideInDown {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown; }
